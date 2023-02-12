@@ -25,7 +25,7 @@ public class TextController implements IController {
     //tell view to show options
     while (!quit) {
       //tell view to show the string so far.
-      view.showString(this.model.getString());
+     
        view.showOptions();
       //accept user input
       String option = in.next();
@@ -59,6 +59,7 @@ public class TextController implements IController {
           model.setUserNum(Integer.valueOf(input));
           model.setNum(Integer.valueOf(randNum));
           System.out.print(model.compareNumber());
+          view.showString(this.model.getString());
           System.out.print("\n______________________________________\n");
           break;
 
